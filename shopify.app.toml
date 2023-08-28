@@ -1,3 +1,28 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+name = "additional-delivery"
+client_id = "165af8c6a735291018bd7c4c80994e29"
+application_url = "https://disposal-staircase.fly.dev"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://disposal-staircase.fly.dev/auth/callback",
+  "https://disposal-staircase.fly.dev/auth/shopify/callback",
+  "https://disposal-staircase.fly.dev/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2022-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "checkout-extensions-mf.myshopify.com"

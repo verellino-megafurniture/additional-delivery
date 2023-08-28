@@ -15,6 +15,7 @@ extension_points = [
 # key = "my-key-2"
 
 [capabilities]
+api_access = true
 network_access = true
 # block_progress = true
 
